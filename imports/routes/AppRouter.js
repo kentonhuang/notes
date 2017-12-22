@@ -36,6 +36,7 @@ export const AppRouter = () => (
         return Meteor.userId() ? <Redirect to="dashboard"/> : <Signup/>
       }}/>
       <Route path="/dashboard" component={Dashboard}/>
+      <Route path="/dashboard/:id" component={Dashboard}/>
       <Route component ={NotFound}/>
     </Switch>
   </Router>
