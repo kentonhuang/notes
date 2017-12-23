@@ -4,6 +4,8 @@ import { Session } from 'meteor/session';
 import PrivateHeader from './PrivateHeader';
 import NoteList from './NoteList';
 
+import Editor from './Editor'
+
 
 export default class Dashboard extends React.Component {
   constructor (props) {
@@ -19,6 +21,7 @@ export default class Dashboard extends React.Component {
           <PrivateHeader title="Notes App"/>
           <div className="page-content">
             <NoteList/>
+            <Editor/>
           </div>
         </div>
       )
